@@ -3,7 +3,7 @@
 
 Simple DNS Spoofing tool made in Python 3 with Scapy. You have to save the fake DNS records in a file and load it in when running the tool
 
-## Using 
+## Usage
 
 * Download it from git or use **_'git clone https://github.com/Trackbool/DerpNSpoof'_**
 * You need the Scapy Python module, you can install it with pip: **_'pip3 install scapy-python3'_**
