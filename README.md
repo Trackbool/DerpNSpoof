@@ -20,7 +20,7 @@ Help menu:
     	  # python3 DerpNSpoof.py all myfile.txt
 
 
-The file format to save the records it´s very simple. You have to store the domain name, and separated by a space, the fake IP in the same line
+The file format to save the records is very simple. You have to store the domain name, and separated by a space, the fake IP in the same line
 
 | Domain to Spoof  | IP address    |
 | -----------------|---------------|
