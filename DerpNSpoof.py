@@ -77,7 +77,7 @@ def valid_args():
 all_pkt = valid_args();
 
 def read_file(path):
-    if(os.path.isfile(path)):
+    if(os.path.isfile(path) and os.stat(path).st_size > 0 ):
         file = open(path,"r")
         for line in file:
             try:
@@ -92,7 +92,7 @@ def read_file(path):
                 sys.exit(1)
         file.close()
     else:
-        print(colors['FAIL']+"    [!] The file doesn't exists"+colors['ENDC'])
+        print(colors['FAIL']+"    [!] The file doesn't exists or is empty"+colors['ENDC'])
         sys.exit(1)
 
 import logging
