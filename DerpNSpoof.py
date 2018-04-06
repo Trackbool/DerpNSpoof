@@ -95,6 +95,8 @@ def read_file(path):
         print(colors['FAIL']+"    [!] The file doesn't exists"+colors['ENDC'])
         sys.exit(1)
 
+import logging
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import *
 
 def check_victims(pkt):
